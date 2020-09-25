@@ -31,7 +31,9 @@ module.exports = (_, argsv) => ({
     new ModuleFederationPlugin({
       name: 'consumer',
       filename: 'remoteEntry.js',
-      remotes: {},
+      remotes: {
+        'host' : 'host@https://host-omega.vercel.app/remoteEntry.js' 
+      },
       exposes: {},
       shared: require('./package.json').dependencies
     }),
