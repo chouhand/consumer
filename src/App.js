@@ -1,7 +1,10 @@
 import React from 'react'
 
+import './index.css'
 const App = props => {
-  return <div>React webpack-5 template</div>
+  return (
+    <h1>Consumer App</h1>
+  )
 }
 
 export default App
